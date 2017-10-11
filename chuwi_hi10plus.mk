@@ -19,7 +19,7 @@ $(call inherit-product, device/intel/cherrytrail-common/cherrytrail.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/intel/chuwi_hi10plus/overlay
 
-$(call inherit-product-if-exists, vendor/intel/chuwi_hi10plus/chuwi_hi10plus-vendor.mk)
+$(call inherit-product-if-exists, vendor/intel/chuwi_vi10plus/chuwi_vi10plus-vendor.mk)
 
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 

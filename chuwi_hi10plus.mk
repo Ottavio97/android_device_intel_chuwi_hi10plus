@@ -17,16 +17,16 @@
 # Inherit from common
 $(call inherit-product, device/intel/cherrytrail-common/cherrytrail.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/intel/chuwi_vi10plus/overlay
+DEVICE_PACKAGE_OVERLAYS += device/intel/chuwi_hi10plus/overlay
 
-$(call inherit-product-if-exists, vendor/intel/chuwi_vi10plus/chuwi_vi10plus-vendor.mk)
+$(call inherit-product-if-exists, vendor/intel/chuwi_vi10plus/chuwi_hi10plus-vendor.mk)
 
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,device/intel/chuwi_vi10plus/ramdisk,root)
+    $(call find-copy-subdir-files,*,device/intel/chuwi_hi10plus/ramdisk,root)
 
 # Prebuilt
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,device/intel/chuwi_vi10plus/prebuilt/system,system)
+    $(call find-copy-subdir-files,*,device/intel/chuwi_hi10plus/prebuilt/system,system)

@@ -17,18 +17,19 @@
 # Inherit from common
 -include device/intel/cherrytrail-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/intel/chuwi_vi10plus
+DEVICE_PATH := device/intel/chuwi_hi10plus
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := cht_cr_mrd_w,chuwi_vi10plus
+TARGET_OTA_ASSERT_DEVICE := cht_cr_mrd_w,chuwi_vi10plus,chuwi_hi10plus
 
 # Kernel
-BOARD_KERNEL_IMAGE_NAME := bzImage
-KERNEL_TOOLCHAIN := /opt/poky/1.8/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux
-TARGET_KERNEL_ARCH := x86_64
-TARGET_KERNEL_CONFIG := x86_64_chuwi_vi10plus_defconfig
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := x86_64-poky-linux-
-TARGET_KERNEL_SOURCE := kernel/intel/cherrytrail
+#BOARD_KERNEL_IMAGE_NAME := bzImage
+#KERNEL_TOOLCHAIN := /opt/poky/1.8/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux
+#TARGET_KERNEL_ARCH := x86_64
+#TARGET_KERNEL_CONFIG := x86_64_chuwi_vi10plus_defconfig
+#TARGET_KERNEL_CROSS_COMPILE_PREFIX := x86_64-poky-linux-
+#TARGET_KERNEL_SOURCE := kernel/intel/cherrytrail
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 
 # Partition sizes
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 27783069696

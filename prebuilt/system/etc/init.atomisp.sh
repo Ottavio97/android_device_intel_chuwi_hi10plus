@@ -8,7 +8,6 @@
 # init won't service until the module load completes!
 insmod /system/lib/modules/videobuf-core.ko
 insmod /system/lib/modules/videobuf-vmalloc.ko
-insmod /system/lib/modules/ov2680b.ko
-insmod /system/lib/modules/ov2680.ko
-insmod /system/lib/modules/unicam_driver.ko
+insmod /system/lib/modules/hm2051b.ko
+insmod /system/lib/modules/hm2051.ko
 insmod /system/lib/modules/atomisp-css2401a0_v21.ko dypool_enable=y

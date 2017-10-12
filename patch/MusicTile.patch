@@ -1,0 +1,23 @@
+--- a/MusicTile.java	2017-10-12 20:07:04.366497074 +0200
++++ b/MusicTile.java	2017-10-11 23:46:28.404338596 +0200
+@@ -205,16 +205,16 @@
+             playbackStateUpdate(state);
+         }
+ 
+-        @Override
++        //@Override
+         public void onClientFolderInfoBrowsedPlayer(String stringUri) { }
+ 
+-        @Override
++        //@Override
+         public void onClientUpdateNowPlayingEntries(long[] playList) { }
+ 
+-        @Override
++        //@Override
+         public void onClientNowPlayingContentChange() { }
+ 
+-        @Override
++        //@Override
+         public void onClientPlayItemResponse(boolean success) { }
+ 
+         @Override
